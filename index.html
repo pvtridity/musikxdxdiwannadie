@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Модальное окно -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                New features coming soon
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Уведомление -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">204863</strong>
+            <small>Sunday afternoon</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Don't touch that dial now, we're just getting started.
+        </div>
+        </div>
+    </div>
+
+    <section class="sec1">
+
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+            <div>
+                <img src="img/Logo.svg" alt="logo">
+            </div>
+
+            <ul class="nav" style="font-weight: 600;">
+                <li class="p-3 nav-item"><a href="#" class="link-light text-decoration-none">HOME</a></li>
+                <li class="p-3 nav-item"><a href="#sec2" class="link-light text-decoration-none">EXPLORE</a></li>
+                <li class="p-3 nav-item"><a href="#sec3" class="link-light text-decoration-none">ABOUT US</a></li>
+                <li class="p-3 nav-item"><a href="#sec4" class="link-light text-decoration-none">SPONSORS</a></li>
+                <li class="p-3 nav-item"><a href="#sec5" class="link-light text-decoration-none">CONTACT US</a></li>
+                <li class="p-3 nav-button bg-white rounded-2"><a href="#" class="link-primary text-decoration-none">GET
+                        TICKETS</a></li>
+            </ul>
+        </header>
+
+        <div class="main d-flex flex-column flex-wrap justify-content-center">
+            <h1 class="text-white" style="font-weight: 700;">The Best Experience Of </h1>
+            <h1 class="text-white" style="font-weight: 700;"> <span
+                    style="font-weight: 700; color: #FFA3A3;">Music</span> In 2021</h1>
+            <p class="hahaha text-white text-center fs-1.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse
+                vitae ligula<br>placerat, eleifend ex non, vehicula libero. Suspendisse eget tellus lectus.</p>
+            <h5 class="d-none d-sm-block text-white" style="font-weight: 700;">
+                <span class="p-3 text-white bg-danger rounded-3" style="font-weight: 700;">Get Started</span>
+                <img src="img/play.svg" alt="play">Watch Video
+            </h5>
+
+            <h5 class="d-block d-sm-none p-4 text-white" style="font-weight: 700;">
+                <span class="p-3 text-white bg-danger rounded-3" style="font-weight: 700;">Get Started</span>
+            </h5>
+
+            <h5 class="d-block d-sm-none p-4 text-white" style="font-weight: 700;">
+                <img src="img/play.svg" alt="play">Watch Video
+            </h5>
+
+        </div>
+
+    </section>
+
+    <section id="sec2" class="sec2">
+
+        <h4 class="p-3" style="font-weight: 700;"> <span style="color: #00f;">Explore</span> By Category</h4>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="shit w-xl-50 p-3 rounded-2 carousel-item active" style="background-color: #ffeeee;">
+                    <img src="img/folk.svg" alt="folk">
+                    <h4 style="font-weight: 700;">Folk</h4>
+                    <p>Duis nec sodales nibh. <br>Proin lectus tortor, rutrum vel vulputate vitae
+                    </p>
+                </div>
+
+                <div class="shit p-3 rounded-2 carousel-item" style="background-color: #f9e6f5;">
+                    <img src="img/rock.svg" alt="rock">
+                    <h4 style="font-weight: 700;">Rock</h4>
+                    <p>Duis nec sodales nibh. <br>Proin lectus tortor, rutrum vel vulputate vitae</p>
+                </div>
+
+                <div class="shit w-xl-50 p-3 rounded-2 carousel-item" style="background-color: #f3faff;">
+                    <img src="img/jazz.svg" alt="jazz">
+                    <h4 style="font-weight: 700;">Jazz</h4>
+                    <p>Duis nec sodales nibh. <br>Proin lectus tortor, rutrum vel vulputate vitae</p>
+                </div>
+            </div>
+
+            <button class="rounded-2 mw-25 carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="background-color: #00f;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+
+            <button class="rounded-2 mw-25 carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="background-color: #00f;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+    </section>
+
+    <section id="sec3" class="sec3">
+
+        <div class="w-50 d-flex flex-column justify-content-center align-items-center">
+            <img class="d-none d-md-block" style="width: 100%;" src="img/musicimg.png" alt="img">
+        </div>
+
+        <div class="tvar d-flex flex-column justify-content-center align-items-left">
+            <h4 class="ms-0" style="font-weight: 700;">About Musik</h4>
+            <p>Fusce justo mi, vehicula id arcu et, dapibus tristique lectus. Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non neque suscipit luctus. Mauris et erat id ipsum condimentum cursus. Sed tempus enim non massa mattis iaculis. In quis massa risus</p>
+            <button type="button" class="yrod ms-0 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-weight: 600;">
+                Learn more
+            </button>
+        </div>
+
+    </section>
+
+    <section id="sec4" class="sec4">
+        <h2 class="p-5" style="font-weight: 700;">Our Sponsors</h5>
+        <img style="width: 100%;" class="d-none d-md-block p-5" src="img/Logos.png" alt="lgogs">
+        <img style="width: 50%;" class="d-block d-md-none p-5" src="img/Group 1.png" alt="lgogs">
+        <img style="width: 50%;" class="d-block d-md-none p-5" src="img/Group 2.png" alt="lgogs">
+        <img style="width: 50%;" class="d-block d-md-none p-5" src="img/Group 3.png" alt="lgogs">
+        <img style="width: 50%;" class="d-block d-md-none p-5" src="img/Group 4.png" alt="lgogs">
+        <button type="button" class="p-2 mb-5 w-50 w-md-25 btn btn-lg btn-primary" data-bs-toggle="popover" title="Work in progress" data-bs-content="But u can always send me ur money using this number 204863" style="font-weight: 600;">Become a Sponsor</button>
+    </section>
+
+    <section id="sec5" class="sec5">
+
+        <div class="mraz position-relative d-flex flex-column justify-content-center bg-primary" style="color: #fff;">
+            <h2 style="font-weight: 700;">Contact us</h2>
+            <p>Have an inquiry? We’ll be happy to assist you</p>
+            <p style="font-weight: 600;"> <button type="button" class="btn btn-primary" onclick="ShowToast()" id="liveToastBtn"> <img src="img/Phone.svg" alt="phone"> </button> +92 333 6527366</p>
+            <p style="font-weight: 600;"> <span><img src="img/Mail.svg" alt="phone"></span> abuzer@greelogix.com</p>
+            <p style="font-weight: 600;"> <span><img src="img/Point.svg" alt="phone"></span> Plot 252, Block L Phase 2 Johar Town, Lahore, PK</p>
+            <img class="svoloch position-absolute bottom-0 end-0" src="img/Shape.png" alt="shape">
+        </div>
+
+        <div class="mraz d-flex flex-column justify-content-center">
+            <h2 style="font-weight: 700;">Fill in your details</h2>
+            <form>
+                <div class="form-group">
+                    <label style="font-weight: 600;" for="nameinputforreal">Name</label>
+                    <input type="text" class="form-control" id="nameinputforreal">
+                </div>
+                <div class="form-group">
+                  <label style="font-weight: 600;" for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label style="font-weight: 600; color: #00f;" for="idc">Message</label>
+                    <input type="text" class="form-control" id="idc">
+                </div>
+                <button type="submit" class="my-2 btn btn-primary">Submit</button>
+              </form>
+        </div>
+
+    </section>
+
+    <section class="sec6 bg-dark">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <div class="d-flex">
+                <img src="img/Logo.svg" alt="logo">
+            </div>
+
+            <ul class="nav" style="font-weight: 600;">
+                <li class="p-3 nav-item"><a href="#" class="link-light text-decoration-none">HOME</a></li>
+                <li class="p-3 nav-item"><a href="#sec2" class="link-light text-decoration-none">EXPLORE</a></li>
+                <li class="p-3 nav-item"><a href="#sec3" class="link-light text-decoration-none">ABOUT US</a></li>
+                <li class="p-3 nav-item"><a href="#sec4" class="link-light text-decoration-none">SPONSORS</a></li>
+                <li class="p-3 nav-item"><a href="#sec5" class="link-light text-decoration-none">CONTACT US</a></li>
+            </ul>
+        </header>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+    </script>
+
+    <script>
+    var option = {
+        animation: true,
+        delay: 5000
+    };
+
+    function ShowToast()
+    {
+        var toastHTMLElement = document.getElementById("liveToast");
+        var toastElement = new bootstrap.Toast(toastHTMLElement, option);
+
+        toastElement.show();
+    }
+    </script>
+
+</body>
+
+</html>

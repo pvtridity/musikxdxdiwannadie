@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;700&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal-header{
+    margin: 0;
+}
+
+.modal-footer{
+    margin: 0;
+}
+
+.toast-body{
+    background-color: rgba(255,255,255,1);
+}
+
+.main{
+    height: 35%;
+}
+
+.shit{
+    width: 25%;
+}
+
+.tvar{
+    width: 50%;
+}
+
+.yrod{
+    width: 25%;
+}
+
+.mraz{
+    width: 50%;
+}
+
+.svoloch{
+    width: 50%;
+}
+
+.hahaha{
+    width: 100%;
+}
+
+.sec1{
+    background-image: url("img/bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 964px;
+}
+
+.sec2{
+    width: 75%;
+    height: 512px;
+    padding: 5%;
+}
+
+.carousel-item{
+    float: initial;
+    margin: auto;
+    transition: none
+}
+
+.sec3{
+    width: 75%;
+    height: 964px;
+    display: flex;
+}
+
+.sec4{
+    width: 75%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.sec5{
+    width: 75%;
+    height: 964px;
+    display: flex;
+}
+
+@media (max-width: 1440px){
+    .sec1{
+        height: 700px;
+    }
+
+    .shit{
+        width: 50%;
+    }
+    
+    .yrod{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1228px){
+    .sec1{
+        background-image: none;
+        background-color: blue;
+    }
+
+    .main{
+        height: 75%;
+    }
+}
+
+@media (max-width: 1024px){
+    .sec1{
+        background-image: none;
+        background-color: blue;
+    }
+
+    .main{
+        height: 66%;
+    }
+
+    .mraz{
+        width: 100%;
+        padding: 15%;
+    }
+
+    .sec3{
+        flex-direction: column;
+    }
+
+    .sec4{
+        height: 666px;
+    }
+
+    
+    .sec5{
+        flex-direction: column;
+    }
+
+    .svoloch{
+        display: none;
+    }
+    
+    .hahaha{
+        width: 75%;
+    }
+
+
+}
+
+@media (max-width: 768px){
+.sec1{
+    width: 100%;
+}
+
+.sec2{
+    width: 100%;
+}
+
+    .sec3{
+        width: 100%;
+        height: 512px;
+    }
+    .sec4{
+        width: 100%;
+        height: auto;
+    }
+
+    .sec5{
+        width: 100%;
+    }
+
+    .tvar{
+        width: 75%;
+    }
+}
+
+@media (max-width: 333px){
+    .sec1{
+        height: 110%;
+    }
+    }
